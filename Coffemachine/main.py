@@ -83,7 +83,7 @@ while is_on:
         print(f"Coffee: {resources['coffee']}g")
         print(f"Money: ${profit}")
     #Add condition for wrong input
-    elif choice != "MENU[choice]":
+    elif choice not in MENU:
         print("Incorrect selection please select (espresso/latte/cappuccino)")
         continue
     else:
